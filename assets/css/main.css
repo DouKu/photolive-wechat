@@ -1,0 +1,49 @@
+html, body
+{
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+a, img, button, input, textarea {
+  -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+input, textarea {
+  -webkit-appearance: none;
+}
+
+.page-enter-active, .page-leave-active
+{
+  transition: opacity .5s
+}
+
+.page-enter, .page-leave-active
+{
+  opacity: 0
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dbdbdb;
+  border-radius: 9px;
+  background-clip: content-box;
+  border: 5px solid transparent;
+}
+
+.main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background: #fafafa;
+}

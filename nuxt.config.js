@@ -11,7 +11,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css' }
     ],
     script: [
-      { src: 'https://ticket1000-1253841380.file.myqcloud.com/flexible.min.js' },
+      { src: 'http://os32fgzvj.bkt.clouddn.com/flexible.min.js' },
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js' },
       { src: 'https://res.wx.qq.com/open/js/jweixin-1.3.2.js' }
     ]

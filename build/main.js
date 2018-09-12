@@ -91,7 +91,7 @@ module.exports = {
     title: 'Photo Live',
     meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' }, { hid: 'Photo Live', name: 'Photo Live', content: 'Photo Live' }],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css' }],
-    script: [{ src: 'https://ticket1000-1253841380.file.myqcloud.com/flexible.min.js' }, { src: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js' }, { src: 'https://res.wx.qq.com/open/js/jweixin-1.3.2.js' }]
+    script: [{ src: 'http://os32fgzvj.bkt.clouddn.com/flexible.min.js' }, { src: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js' }, { src: 'https://res.wx.qq.com/open/js/jweixin-1.3.2.js' }]
   },
   css: ['~assets/css/main.css', '~assets/css/reset.css'],
   loading: { color: '#3B8070', height: '5px' },

@@ -5,17 +5,17 @@
     "pages/index.a683fc52131f22479750.js",
     "layouts/default.3e0a2a1433b939d94a7c.js",
     "vendor.50684221f51b1c423570.js",
-    "app.b42ff13f47cc413ea5f2.js",
-    "manifest.b21c475f455b7cef7b3b.js",
+    "app.210e47201fa2c5ee4e55.js",
+    "manifest.af5e7ea6fce19d125aab.js",
     "app.a8437d924044a3f6ec50e5b2889892c6.css",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.b21c475f455b7cef7b3b.js",
+    "manifest.af5e7ea6fce19d125aab.js",
     "vendor.50684221f51b1c423570.js",
-    "app.b42ff13f47cc413ea5f2.js"
+    "app.210e47201fa2c5ee4e55.js"
   ],
   "async": [
     "pages/index.a683fc52131f22479750.js",

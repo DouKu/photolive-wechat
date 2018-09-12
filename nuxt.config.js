@@ -32,7 +32,7 @@ module.exports = {
     },
     extend(config, ctx) {
       if (process.env.NODE_ENV === 'production') {
-        config.output.publicPath = '/wx/static'
+        config.output.publicPath = '/wx/static/'
       } else {
         config.output.publicPath = '/'
       }

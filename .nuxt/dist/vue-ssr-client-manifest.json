@@ -1,19 +1,19 @@
 {
-  "publicPath": "/wx/static",
+  "publicPath": "/wx/static/",
   "all": [
     "img/photo.2280988.svg",
     "pages/wx/index.fd8912270561226891e7.js",
     "layouts/default.3e0a2a1433b939d94a7c.js",
     "vendor.50684221f51b1c423570.js",
     "app.bb463ca9ce58de66d86e.js",
-    "manifest.ffb35305bf9bc9f0b8bf.js",
+    "manifest.83c0aa3abea4259bcd1a.js",
     "app.a8437d924044a3f6ec50e5b2889892c6.css",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.ffb35305bf9bc9f0b8bf.js",
+    "manifest.83c0aa3abea4259bcd1a.js",
     "vendor.50684221f51b1c423570.js",
     "app.bb463ca9ce58de66d86e.js"
   ],

@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import SwipeCard from '../components/swipe-card'
-import FilterTab from '../components/filter-tab'
+import SwipeCard from '../../components/swipe-card'
+import FilterTab from '../../components/filter-tab'
 
 export default {
   components: {

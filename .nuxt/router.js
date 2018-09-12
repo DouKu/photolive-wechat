@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _b0e64b90 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _1101c3a4 = () => import('../pages/wx/index.vue' /* webpackChunkName: "pages/wx/index" */).then(m => m.default || m)
 
 
 
@@ -64,9 +64,9 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
-			path: "/",
-			component: _b0e64b90,
-			name: "index"
+			path: "/wx",
+			component: _1101c3a4,
+			name: "wx"
 		}
     ],
     

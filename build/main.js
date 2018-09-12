@@ -109,7 +109,7 @@ module.exports = {
     },
     extend: function extend(config, ctx) {
       if (true) {
-        config.output.publicPath = '/';
+        config.output.publicPath = '/wx/static';
       } else {
         config.output.publicPath = '/';
       }

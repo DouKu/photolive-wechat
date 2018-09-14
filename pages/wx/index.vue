@@ -9,7 +9,7 @@
     </div>
     <div class="content">
       <ul class="image-row">
-        <li v-for="(photo, index) in photos" :key="index">
+        <li v-for="(photo, index) in photos" :key="index" @click="handlePhotoClick(photo)">
           <img :src="photo"/>
         </li>
       </ul>
@@ -39,6 +39,13 @@ export default {
         'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=917178670,4125601835&fm=26&gp=0.jpg',
         'http://img000.hc360.cn/y1/M03/EE/8C/wKhQc1SYCb6EE_FuAAAAAD45jfE597.jpg..300x300.jpg'
       ]
+    }
+  },
+  mehtod: {
+    handlePhotoClick(photo) {
+      window.wx.previewImage({
+        current: photo
+      })
     }
   }
 }

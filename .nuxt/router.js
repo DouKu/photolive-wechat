@@ -4,6 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const _1101c3a4 = () => import('../pages/wx/index.vue' /* webpackChunkName: "pages/wx/index" */).then(m => m.default || m)
+const _38e58de8 = () => import('../pages/wx/detail/index.vue' /* webpackChunkName: "pages/wx/detail/index" */).then(m => m.default || m)
 
 
 
@@ -67,6 +68,11 @@ export function createRouter () {
 			path: "/wx",
 			component: _1101c3a4,
 			name: "wx"
+		},
+		{
+			path: "/wx/detail",
+			component: _38e58de8,
+			name: "wx-detail"
 		}
     ],
     

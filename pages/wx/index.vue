@@ -41,7 +41,7 @@ export default {
       ]
     }
   },
-  mehtod: {
+  methods: {
     handlePhotoClick(photo) {
       window.wx.previewImage({
         current: photo

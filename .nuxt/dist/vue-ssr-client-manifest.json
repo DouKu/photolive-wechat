@@ -6,24 +6,28 @@
     "pages/wx/detail/index.d443579f7edf880dad16.js",
     "layouts/default.1f03d578c05f983251cb.js",
     "vendor.cade6775b398e97e11dd.js",
-    "pages/wx/index.f222ae9218c31d16f77e.js",
-    "manifest.7a547582ef58aff46c69.js",
+    "pages/wx/index.9a118a92c69c10f10f2f.js",
+    "manifest.5f5ef098111ce7782ff4.js",
     "app.a8437d924044a3f6ec50e5b2889892c6.css",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.7a547582ef58aff46c69.js",
+    "manifest.5f5ef098111ce7782ff4.js",
     "vendor.cade6775b398e97e11dd.js",
     "app.31b9c1547aa454958df0.js"
   ],
   "async": [
     "pages/wx/detail/index.d443579f7edf880dad16.js",
     "layouts/default.1f03d578c05f983251cb.js",
-    "pages/wx/index.f222ae9218c31d16f77e.js"
+    "pages/wx/index.9a118a92c69c10f10f2f.js"
   ],
   "modules": {
+    "10604789": [
+      5,
+      1
+    ],
     "11277508": [
       4
     ],
@@ -143,10 +147,6 @@
     "a326ceb4": [
       3
     ],
-    "10e5e484": [
-      5,
-      1
-    ],
     "8d8d96ca": [
       4
     ],
@@ -195,6 +195,10 @@
     "0eb7ddb9": [
       4
     ],
+    "20e1283a": [
+      5,
+      1
+    ],
     "6e88d763": [
       0,
       7
@@ -220,6 +224,10 @@
     ],
     "8e098ee2": [
       4
+    ],
+    "51df6554": [
+      5,
+      1
     ],
     "127bf7fd": [
       4
@@ -325,6 +333,12 @@
       5,
       1
     ],
+    "c7827c58": [
+      4
+    ],
+    "317c88da": [
+      4
+    ],
     "666486dd": [
       4
     ],
@@ -382,9 +396,6 @@
       7
     ],
     "d1b91716": [
-      4
-    ],
-    "c7827c58": [
       4
     ],
     "124ddc22": [
@@ -493,10 +504,6 @@
     "41b0841b": [
       4
     ],
-    "3e3585ef": [
-      5,
-      1
-    ],
     "5e8031b9": [
       4
     ],
@@ -537,13 +544,6 @@
     "c7917b0a": [
       5,
       1
-    ],
-    "4747e4c4": [
-      0,
-      7
-    ],
-    "317c88da": [
-      4
     ],
     "2a6b21aa": [
       5,
@@ -615,14 +615,14 @@
     "1a20bda6": [
       4
     ],
-    "390c2b89": [
-      5,
-      1
-    ],
     "9dcf2e2c": [
       4
     ],
     "ceb52d88": [
+      0,
+      7
+    ],
+    "4747e4c4": [
       0,
       7
     ],

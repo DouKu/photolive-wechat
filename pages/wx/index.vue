@@ -44,7 +44,8 @@ export default {
   methods: {
     handlePhotoClick(photo) {
       window.wx.previewImage({
-        current: photo
+        current: photo,
+        urls: [photo]
       })
     }
   }

@@ -108,7 +108,7 @@ module.exports = {
       }
     },
     extend: function extend(config, ctx) {
-      if (false) {
+      if (true) {
         config.output.publicPath = '/wx/static/';
       } else {
         config.output.publicPath = '/';
@@ -129,9 +129,9 @@ module.exports = {
       maxAge: 900000
     }
   },
-  dev: !("development" !== 'production'),
+  dev: !("production" !== 'production'),
   env: {
-    NODE_ENV: JSON.stringify("development")
+    NODE_ENV: JSON.stringify("production")
   }
 };
 
@@ -306,8 +306,8 @@ var commonPhotoliveRequest = function commonPhotoliveRequest(interfaceName, data
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony default export */ exports["default"] = {
-  port: 3001,
-  host: '0.0.0.0',
+  port: 4001,
+  host: '127.0.0.1',
   interface: ''
 };
 

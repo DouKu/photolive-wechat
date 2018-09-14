@@ -15,7 +15,7 @@ let layouts = {
 let resolvedLayouts = {}
 
 export default {
-  head: {"title":"Photo Live","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"},{"hid":"Photo Live","name":"Photo Live","content":"Photo Live"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002FSwiper\u002F4.0.2\u002Fcss\u002Fswiper.min.css"}],"script":[{"src":"http:\u002F\u002Fos32fgzvj.bkt.clouddn.com\u002Fflexible.min.js"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002FSwiper\u002F4.0.2\u002Fjs\u002Fswiper.min.js"},{"src":"https:\u002F\u002Fres.wx.qq.com\u002Fopen\u002Fjs\u002Fjweixin-1.3.2.js"}],"style":[]},
+  head: {"title":"夏季婚礼流行趋势发布会","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"},{"hid":"Photo Live","name":"Photo Live","content":"Photo Live"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002FSwiper\u002F4.0.2\u002Fcss\u002Fswiper.min.css"}],"script":[{"src":"http:\u002F\u002Fos32fgzvj.bkt.clouddn.com\u002Fflexible.min.js"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002FSwiper\u002F4.0.2\u002Fjs\u002Fswiper.min.js"},{"src":"https:\u002F\u002Fres.wx.qq.com\u002Fopen\u002Fjs\u002Fjweixin-1.3.2.js"}],"style":[]},
   render(h, props) {
     const loadingEl = h('nuxt-loading', { ref: 'loading' })
     const layoutEl = h(this.layout || 'nuxt')

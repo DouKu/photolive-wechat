@@ -42,7 +42,6 @@ export default {
 <style scoped>
 .swipe-card {
   height: 400px;
-  padding-top: 48px;
   padding-bottom: 48px;
 }
 
@@ -50,7 +49,6 @@ export default {
   width: 100% !important;
   overflow: hidden;
   height: 100%;
-  border-radius: 10px;
   background: #fabbaa;
 }
 

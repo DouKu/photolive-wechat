@@ -1,10 +1,7 @@
 <template>
   <div>
     <ul class="filter-tab">
-      <li class="active">全部照片</li>
-      <li>婚礼前夕</li>
-      <li>婚礼现场</li>
-      <li>婚纱照</li>|
+      <li v-for="(tab, index) in tabs" :class="[{ active: index === current }]" :key="index" @click="handleTabClick(index)">{{tab}}</li>|
       <img class="photo" :src="photo"/>
       <span class="photo-count">{{num}}</span>
     </ul>
@@ -15,11 +12,32 @@ import photo from '../assets/img/icon/photo.svg'
 
 export default {
   props: [
+    'value',
     'num'
   ],
   data() {
     return {
-      photo
+      photo,
+      current: 0,
+      tabs: [
+        '全部照片',
+        '婚礼前夕',
+        '婚礼现场',
+        '婚纱照'
+      ]
+    }
+  },
+  watch: {
+    value(val) {
+      this.current = val
+    }
+  },
+  created() {
+    this.current = this.value
+  },
+  methods: {
+    handleTabClick(index) {
+      this.$emit('input', index)
     }
   }
 }
@@ -33,9 +51,8 @@ export default {
 }
 
 .filter-tab li {
-  font-size: 20px;
   display: inline;
-  margin-right: 35px;
+  margin-right: 30px;
 }
 
 .filter-tab .active {

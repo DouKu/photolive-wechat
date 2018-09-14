@@ -88,7 +88,7 @@ module.exports = config;
 
 module.exports = {
   head: {
-    title: 'Photo Live',
+    title: '夏季婚礼流行趋势发布会',
     meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' }, { hid: 'Photo Live', name: 'Photo Live', content: 'Photo Live' }],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css' }],
     script: [{ src: 'http://os32fgzvj.bkt.clouddn.com/flexible.min.js' }, { src: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js' }, { src: 'https://res.wx.qq.com/open/js/jweixin-1.3.2.js' }]
@@ -108,7 +108,7 @@ module.exports = {
       }
     },
     extend: function extend(config, ctx) {
-      if (true) {
+      if (false) {
         config.output.publicPath = '/wx/static/';
       } else {
         config.output.publicPath = '/';
@@ -129,9 +129,9 @@ module.exports = {
       maxAge: 900000
     }
   },
-  dev: !("production" !== 'production'),
+  dev: !("development" !== 'production'),
   env: {
-    NODE_ENV: JSON.stringify("production")
+    NODE_ENV: JSON.stringify("development")
   }
 };
 
@@ -306,8 +306,8 @@ var commonPhotoliveRequest = function commonPhotoliveRequest(interfaceName, data
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony default export */ exports["default"] = {
-  port: 4001,
-  host: '127.0.0.1',
+  port: 3001,
+  host: '0.0.0.0',
   interface: ''
 };
 

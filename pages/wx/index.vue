@@ -1,21 +1,21 @@
 <template>
   <div class="main">
+    <swipe-card></swipe-card>
     <div class="header">
-      <swipe-card></swipe-card>
       <div class="title-bar">
         <h3>夏季婚礼流行趋势发布会</h3>
       </div>
-      <filter-tab :num="photos.length"></filter-tab>
+      <filter-tab v-model="current" :num="photosDisplay.length"></filter-tab>
     </div>
     <div class="content">
       <ul class="image-row">
-        <li v-for="(photo, index) in photos" :key="index" @click="handlePhotoClick(photo)">
+        <li v-for="(photo, index) in photosDisplay" :key="index" @click="handlePhotoClick(photo)">
           <img :src="photo"/>
         </li>
       </ul>
       <div class="content-tip">没有更多图片啦</div>
     </div>
-    <button class="footer">点击了解更多圆桌技术</button>
+    <button class="footer" @click="openQrCode">点击了解更多圆桌技术</button>
   </div>
 </template>
 
@@ -28,8 +28,22 @@ export default {
     SwipeCard,
     FilterTab
   },
+  computed: {
+    photosDisplay() {
+      if (this.current === 0) {
+        return this.photos
+      } else if (this.current === 1) {
+        return [this.photos[1], this.photos[3]]
+      } else if (this.current === 2) {
+        return [this.photos[0], this.photos[5]]
+      } else if (this.current === 3) {
+        return [this.photos[2], this.photos[4], this.photos[6]]
+      }
+    }
+  },
   data() {
     return {
+      current: 0,
       photos: [
         'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=666816027,1584309640&fm=26&gp=0.jpg',
         'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=574572877,904876359&fm=26&gp=0.jpg',
@@ -46,6 +60,12 @@ export default {
       window.wx.previewImage({
         current: photo,
         urls: [photo]
+      })
+    },
+    openQrCode() {
+      window.wx.previewImage({
+        current: 'http://os32fgzvj.bkt.clouddn.com/1536950878.png',
+        urls: ['http://os32fgzvj.bkt.clouddn.com/1536950878.png']
       })
     }
   }
@@ -85,7 +105,7 @@ export default {
 }
 
 .content .content-tip {
-  font-size: 18px;
+  font-size: 26px;
   text-align: center;
   color: #c0c0c0;
 }

@@ -75,8 +75,8 @@ export default {
 .photo {
   position: relative;
   display: inline-block;
-  width: 30px;
-  height: 26px;
+  width: 32px;
+  height: 28px;
   top: 6px;
   left: 35px;
 }
@@ -85,6 +85,6 @@ export default {
   display: inline-block;
   left: 55px;
   top: 2px;
-  font-size: 18px;
+  font-size: 26px;
 }
 </style>

@@ -10,21 +10,24 @@
     <div class="content">
       <ul class="image-row">
         <li v-for="(photo, index) in photosDisplay" :key="index" @click="handlePhotoClick(photo)">
-          <img :src="photo"/>
+          <img width="100%" height="100%" :src="photo.tiny"/>
         </li>
       </ul>
       <div class="content-tip">没有更多图片啦</div>
     </div>
     <button class="footer" @click="openQrCode">点击了解更多圆桌技术</button>
+    <adv :src="adv" v-model="showAdv"></adv>
   </div>
 </template>
 
 <script>
 import SwipeCard from '../../components/swipe-card'
 import FilterTab from '../../components/filter-tab'
+import Adv from '../../components/adv'
 
 export default {
   components: {
+    Adv,
     SwipeCard,
     FilterTab
   },
@@ -43,23 +46,40 @@ export default {
   },
   data() {
     return {
+      showAdv: true,
+      adv: 'http://oqzgtjqen.bkt.clouddn.com/%E5%B0%81%E9%9D%A2-1125X1815.jpg',
       current: 0,
       photos: [
-        'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=666816027,1584309640&fm=26&gp=0.jpg',
-        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=574572877,904876359&fm=26&gp=0.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537291929&di=f41838537159ab2ef421d87575cfbeed&imgtype=jpg&er=1&src=http%3A%2F%2Fimg007.hc360.cn%2Fy1%2FM06%2F97%2F31%2FwKhQc1SbmmaEW6slAAAAAHwGj-s672.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536697236841&di=9ef9fc3462b0dee764d1e0e7cf3919e4&imgtype=0&src=http%3A%2F%2Fm.020bom.com%2Fimages%2FTB1AQ_lFVXXXXXfXXXXXXXXXXXX_%2521%25210-item_pic.jpg_200x200.jpg',
-        'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537291980&di=c4b4d2f15f67659a502ee3bd280345d6&imgtype=jpg&er=1&src=http%3A%2F%2Fs1.sinaimg.cn%2Fbmiddle%2F5e3a0eee07034bd1d4200',
-        'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=917178670,4125601835&fm=26&gp=0.jpg',
-        'http://img000.hc360.cn/y1/M03/EE/8C/wKhQc1SYCb6EE_FuAAAAAD45jfE597.jpg..300x300.jpg'
+        {
+          normal: 'http://oqzgtjqen.bkt.clouddn.com/TIM_2638%E5%89%AF%E6%9C%AC.jpg',
+          tiny: 'http://oqzgtjqen.bkt.clouddn.com/TIM_2638%E5%89%AF%E6%9C%AC.jpg'
+        }, {
+          normal: 'http://oqzgtjqen.bkt.clouddn.com/TIM_3965%E5%89%AF%E6%9C%AC.jpg',
+          tiny: 'http://oqzgtjqen.bkt.clouddn.com/TIM_3965%E5%89%AF%E6%9C%AC-tiny.jpg'
+        }, {
+          normal: 'http://oqzgtjqen.bkt.clouddn.com/3E0A1532.jpg',
+          tiny: 'http://oqzgtjqen.bkt.clouddn.com/3E0A1532-tiny.jpg'
+        }, {
+          normal: 'http://oqzgtjqen.bkt.clouddn.com/3E0A1646.jpg',
+          tiny: 'http://oqzgtjqen.bkt.clouddn.com/3E0A1646-tiny.jpg'
+        }, {
+          normal: 'http://oqzgtjqen.bkt.clouddn.com/3E0A1868.jpg',
+          tiny: 'http://oqzgtjqen.bkt.clouddn.com/3E0A1868-tiny.jpg'
+        }, {
+          normal: 'http://oqzgtjqen.bkt.clouddn.com/MEGA4250.jpg',
+          tiny: 'http://oqzgtjqen.bkt.clouddn.com/MEGA4250-tiny.jpg'
+        }, {
+          normal: 'http://oqzgtjqen.bkt.clouddn.com/_MG_8877%20%E6%8B%B7%E8%B4%9D.jpg',
+          tiny: 'http://oqzgtjqen.bkt.clouddn.com/_MG_8877%20%E6%8B%B7%E8%B4%9D-tiny.jpg'
+        }
       ]
     }
   },
   methods: {
     handlePhotoClick(photo) {
       window.wx.previewImage({
-        current: photo,
-        urls: [photo]
+        current: photo.normal,
+        urls: [photo.normal]
       })
     },
     openQrCode() {

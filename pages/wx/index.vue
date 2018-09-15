@@ -10,7 +10,7 @@
     <div class="content">
       <ul class="image-row">
         <li v-for="(photo, index) in photosDisplay" :key="index" @click="handlePhotoClick(photo)">
-          <img width="100%" height="100%" :src="photo.tiny"/>
+          <img :src="photo.tiny"/>
         </li>
       </ul>
       <div class="content-tip">没有更多图片啦</div>
@@ -122,7 +122,15 @@ export default {
   border-radius: 5px;
   margin-bottom: 50px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, .1), -2px 0px 5px rgba(0, 0, 0, .1);
+  overflow: hidden;
 }
+.content .image-row li img {
+  width: auto;
+	height: auto;
+	max-width: 150%;
+	max-height: 150%;
+}
+
 
 .content .content-tip {
   font-size: 26px;

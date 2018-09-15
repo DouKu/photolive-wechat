@@ -6,24 +6,28 @@
     "pages/wx/detail/index.d443579f7edf880dad16.js",
     "layouts/default.1f03d578c05f983251cb.js",
     "vendor.cade6775b398e97e11dd.js",
-    "pages/wx/index.33b093228effeedf5dd3.js",
-    "manifest.79052133c32744c90b90.js",
+    "pages/wx/index.0583b0c877b4914a4304.js",
+    "manifest.8598ec572798614b77da.js",
     "app.a8437d924044a3f6ec50e5b2889892c6.css",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.79052133c32744c90b90.js",
+    "manifest.8598ec572798614b77da.js",
     "vendor.cade6775b398e97e11dd.js",
     "app.641c949c95c57b35c49c.js"
   ],
   "async": [
     "pages/wx/detail/index.d443579f7edf880dad16.js",
     "layouts/default.1f03d578c05f983251cb.js",
-    "pages/wx/index.33b093228effeedf5dd3.js"
+    "pages/wx/index.0583b0c877b4914a4304.js"
   ],
   "modules": {
+    "11196916": [
+      5,
+      1
+    ],
     "11277508": [
       4
     ],
@@ -195,10 +199,6 @@
     "0eb7ddb9": [
       4
     ],
-    "fc6a2484": [
-      5,
-      1
-    ],
     "6e88d763": [
       0,
       7
@@ -305,6 +305,10 @@
     "4ed9aabe": [
       4
     ],
+    "24d9c208": [
+      5,
+      1
+    ],
     "3f65a52e": [
       4
     ],
@@ -387,6 +391,10 @@
     "c7827c58": [
       4
     ],
+    "60cb696a": [
+      5,
+      1
+    ],
     "124ddc22": [
       0,
       7
@@ -434,10 +442,6 @@
     "704766eb": [
       4
     ],
-    "104365ef": [
-      5,
-      1
-    ],
     "1fd2b586": [
       4
     ],
@@ -447,16 +451,17 @@
     "5e85b3ff": [
       4
     ],
+    "41c2717c": [
+      0,
+      7
+    ],
+    "317c88da": [
+      4
+    ],
     "2acc28ca": [
       4
     ],
     "9e72921c": [
-      4
-    ],
-    "ddaf7fae": [
-      4
-    ],
-    "317c88da": [
       4
     ],
     "3cce7e60": [
@@ -521,10 +526,6 @@
     ],
     "5e8031b9": [
       4
-    ],
-    "796be8ee": [
-      5,
-      1
     ],
     "38a28d2c": [
       4
@@ -601,6 +602,9 @@
     "464ca3c0": [
       4
     ],
+    "ddaf7fae": [
+      4
+    ],
     "581a17b6": [
       4
     ],
@@ -643,10 +647,6 @@
       7
     ],
     "4747e4c4": [
-      0,
-      7
-    ],
-    "41c2717c": [
       0,
       7
     ],

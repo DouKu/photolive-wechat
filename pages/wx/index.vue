@@ -47,7 +47,7 @@ export default {
   data() {
     return {
       showAdv: true,
-      adv: 'http://oqzgtjqen.bkt.clouddn.com/%E5%B0%81%E9%9D%A2-1125X1815.jpg',
+      adv: 'http://oqzgtjqen.bkt.clouddn.com/%E5%B0%81%E9%9D%A2-1125X1815-tiny.jpg',
       current: 0,
       photos: [
         {

@@ -49,6 +49,7 @@ export default {
 .skip {
   color: #fff;
   position: absolute;
+  background: rgba(0, 0, 0, .5);
   top: 30px;
   right: 48px; 
   width: 65px;
